@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#
+# consul_kv_generate.sh key value
+#
+
+
 function json {
 	jq -n --arg key "$1" --arg value "$2"  '{key: $key, flags: 0, value: $value}'
 }
